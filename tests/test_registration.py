@@ -1,9 +1,7 @@
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-from locators import AuthLocators
-from locators import HeaderLocators
-from locators import RegistrationErrorLocators
+from locators import AuthLocators, HeaderLocators, RegistrationErrorLocators
 
 
 class TestRegistration:

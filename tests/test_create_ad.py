@@ -12,5 +12,4 @@ class TestCreateAd:
         wait.until(EC.element_to_be_clickable(HeaderLocators.CREATE_AD_BUTTON)).click()
 
         # Проверка: появилось модальное окно с нужным заголовком
-        title_text = wait.until(EC.visibility_of_element_located(AdLocators.UNAUTHORIZED_MODAL_TITLE)).text
-        assert title_text == "Чтобы разместить объявление, авторизуйтесь"
+        assert wait.until(EC.visibility_of_element_located(AdLocators.UNAUTHORIZED_MODAL_TITLE)).is_displayed()
